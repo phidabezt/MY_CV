@@ -1,0 +1,321 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+   background: lightblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+img {
+   width: 100%;
+   height: 150%;
+   object-fit: cover;
+}
+
+.container {
+   position: relative;
+   width: 100%;
+   transform: scale(0.8);
+   max-width: 2000px;
+   min-height: 1000px;
+   background: #fff;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .cv__left {
+   position: relative;
+   background: #003147;
+   padding: 40px;
+}
+
+.profileText {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.profileText .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.profileText h2 {
+   color: #fff;
+   font-size: 1.5em;
+   margin-top: 20px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.4em;
+}
+
+.profileText h2 span {
+   font-size: 1.1em;
+   font-weight: 300;
+}
+
+.contactInfo {
+   padding-top: 40px;
+}
+
+.contactInfo ul {
+   position: relative;
+}
+
+.contactInfo ul li {
+   position: relative;
+   list-style: none;
+   margin: 10px 0;
+}
+
+.contactInfo ul li .icon {
+   display: inline-block;
+   width: 30px;
+   font-size: 18px;
+   color: #03a9f4;
+}
+
+.contactInfo ul li a {
+   text-decoration: none;
+   font-weight: 300;
+   color: #fff;
+   font-size: 1.4rem;
+}
+
+.title {
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   font-size: 2rem;
+}
+
+.contactInfo.education li {
+   margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+   color: #03a9f4;
+   font-weight: 500;
+   font-size: 1.5rem;
+}
+
+.contactInfo.education h4:nth-child(2) {
+   color: #fff;
+   font-weight: 600;
+   font-size: 1.7rem;
+}
+
+.contactInfo.education h4 {
+   color: #fff;
+   font-weight: 200;
+   font-size: 1.5rem;
+}
+
+.language span {
+   font-weight: 300;
+   color: #fff;
+   font-size: 1.6rem;
+}
+
+.contactInfo.language .percent {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 6px;
+   background: #081921;
+   margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   background: #03a9f4;
+}
+
+
+
+.container .cv__right {
+   position: relative;
+   background: #fff;
+   padding: 40px;
+}
+
+.about {
+   margin-bottom: 50px;
+}
+
+.about:last-child {
+   margin-bottom: 0;
+}
+
+.title2 {
+   color: #003147;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+   font-size: 2rem;
+}
+
+.about p {
+   color: #333;
+   font-size: 1.3rem;
+   line-height: 1.9rem;
+}
+
+.about li {
+   color: #333;
+   font-size: 1.3rem;
+   margin: 0.4rem 0;
+}
+
+
+.about .text ul {
+   line-height: 1.4rem;
+   padding-left: 1rem;
+}
+
+.about .box {
+   display: flex;
+   gap: 2rem;
+   flex-direction: row;
+}
+
+.workexp .box:nth-child(3) {
+   margin-top: 1.5rem;
+}
+
+.about .box .year_company {
+   max-width: 190px;
+   min-width: 190px;
+}
+
+.about .box .year_company h5 {
+   text-transform: uppercase;
+   color: #848c90;
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+
+.about .box .year_company h4 {
+   text-transform: uppercase;
+   color: #848c90;
+   font-weight: 600;
+   width: auto;
+   font-size: 1.2rem;
+}
+
+.about .box .text h3 {
+   font-size: 1.5rem;
+}
+
+.about .box .text a {
+   text-decoration: none;
+   color: #333;
+}
+
+.about .box .text a i {
+   font-size: 1rem;
+}
+
+.about.skills {
+   padding-right: 1.5rem;
+}
+
+.skills .box {
+   position: relative;
+   padding: 0.8rem 0;
+   display: grid;
+   grid-template-columns: 20% 80%;
+}
+
+.skills .box h3 {
+   color: #848c90;
+   font-weight: 500;
+   font-size: 1.5rem;
+}
+
+.skills .box .percent {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: #f0f0f0;
+}
+
+.skills .box .percent div {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   background: #03a9f4;
+}
+
+.interest ul {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   align-items: center;
+}
+
+.interest ul li {
+   list-style: none;
+   color: #333;
+   font-weight: 500;
+   font-size: 1.4rem;
+   margin: 10px 0;
+}
+
+.interest ul li i {
+   color: #03a9f4;
+   font-size: 1.5rem;
+}
+
+.about.about.certification {
+
+}
+
+.about.certification h5 {
+   color: #848c90;
+   font-weight: 500;
+   font-size: 1.3rem;
+}
+
+.about.certification h4 {
+   color: black;
+   font-weight: 600;
+   font-size: 1.2rem;
+}
+
+.about.certification .box:nth-child(3) {
+   margin-top: 1rem;
+}
+
+.hope {
+   margin-top: 6rem;
+   text-align: center;
+}
+
